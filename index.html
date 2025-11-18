@@ -46,7 +46,7 @@
           <div class="hero-container">
             <p>Косметологічна клініка</p>
             <h1 class="hero-section__title">Beauty Zone</h1>
-            <button class="button">Замовити дзвінок</button>
+            <button class="modal-btn-open">Замовити дзвінок</button>
             <p class="hero-section__text">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
@@ -150,7 +150,7 @@
                   </svg>
                 </button>
                 <ul class="procedures-list">
-                  <li>
+                  <li class="procedures-image">
                     <article>
                       <img
                         src="./image/mask-for-face.jpg"
@@ -159,7 +159,7 @@
                       <h3 class="procedures__name">Маски для обличчя</h3>
                     </article>
                   </li>
-                  <li>
+                  <li class="procedures-image">
                     <article>
                       <img
                         src="./image/injection-for-face.jpg"
@@ -168,7 +168,7 @@
                       <h3 class="procedures__name">Ін'єкції для обличчя</h3>
                     </article>
                   </li>
-                  <li>
+                  <li class="procedures-image">
                     <article>
                       <img
                         src="./image/clean-face.png"
@@ -179,7 +179,7 @@
                   </li>
                 </ul>
                 <button class="procedures-carusel" type="button">
-                  <svg class="procedures-arrow">
+                  <svg class="procedures-arrow next">
                     <use href="./image/icons.svg#icon-arrow"></use>
                   </svg>
                 </button>
@@ -192,7 +192,8 @@
             <h2 class="section-title maps-title">
               Як нас <span class="title-brand">знайти</span>
             </h2>
-            <iframe class="map"
+            <iframe
+              class="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1762345268030!5m2!1sru!2sua"
               width="605"
               height="481"
@@ -273,5 +274,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
